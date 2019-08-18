@@ -1,6 +1,7 @@
 package com.aulinha.aulinha.Domain;
 
 
+
 import lombok.*;
 
 
@@ -30,4 +31,5 @@ public class Usuario{
 
     @Column(name = "ds_email", nullable = false)
     private String email;
+
 }

@@ -30,9 +30,7 @@ public class UsuarioController {
     @GetMapping
     public ResponseEntity<List<Usuario>> RecuperarUsuarios() {
 
-        List<Usuario> usuario = usuarioRepository.findAll();
-        if (usuario == null)
-            new ArrayList<>();
+        List<Usuario> usuario = usuarioService.recuperarTodosUsuario();
 
         return ResponseEntity.ok(usuario);
     }
